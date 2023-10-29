@@ -7,7 +7,7 @@ public class Main {
         check[0] = true;
         check[1] = true;
 
-        for (int i = 2; i <= Math.sqrt(check.length); i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (!check[i]) {
                 for (int j = i * 2; j <= n; j += i) {
                     check[j] = true;
