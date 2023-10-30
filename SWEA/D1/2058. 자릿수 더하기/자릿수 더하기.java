@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Solution {
     public int sum(int num) {
-        String temp = String.valueOf(num);
-        String[] arr = temp.split("");
-
         int answer = 0;
-        for (String s : arr) {
-            answer += Integer.parseInt(s);
+
+        while (num != 0) {
+            int digit = num % 10;
+            answer += digit;
+            num /= 10;
         }
         return answer;
     }
